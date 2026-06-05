@@ -65,7 +65,14 @@ from furiosa_perf.utils.collect_env import SystemDetector
     help="Use furiosa-custom vllm benchmark tools instead of official vllm tools (default: False).",
 )
 def run(
-    model: str, hardware_type: str, backend: str, server_config: Path, benchmark_config: Path, full: bool, dev: bool
+    model: str,
+    hardware_type: str,
+    backend: str,
+    server_config: Path,
+    benchmark_config: Path,
+    save_api_log: bool,
+    full: bool,
+    dev: bool,
 ) -> None:
     setup_logger("INFO")
     logger.info("Starting FURIOSA-BENCH")

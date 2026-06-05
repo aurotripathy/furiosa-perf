@@ -3,4 +3,4 @@ task: offline
 scenarios:
   - input_tokens: 1024
     output_tokens: 1024
-    max_concurrency: [1, 4, 8, 16]
+    max_concurrency: [16]
