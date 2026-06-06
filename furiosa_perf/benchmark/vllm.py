@@ -59,7 +59,8 @@ class VllmPerformanceBenchmark:
     ]
     VLLM_COMMANDS: dict[str, list[str]] = {
         "offline": [
-            "--backend=vllm",
+            "--backend=openai-chat",
+            "--endpoint=/v1/chat/completions",
             "--dataset-name=random",
             "--random-input-len={input_tokens}",
             "--random-output-len={output_tokens}",
