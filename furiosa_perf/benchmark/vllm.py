@@ -52,7 +52,6 @@ class VllmPerformanceBenchmark:
         "--num-prompts={num_prompts}",
         "--request-rate={request_rate}",
         "--model={model}",
-        "--ignore-eos",
         "--save-result",
         "--result-dir={result_dir}",
         "--ready-check-timeout-sec=0",
