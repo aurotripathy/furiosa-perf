@@ -65,6 +65,7 @@ class VllmPerformanceBenchmark:
             "--random-input-len={input_tokens}",
             "--random-output-len={output_tokens}",
             "--random-range-ratio={random_range_ratio}",
+            '--extra-body={{"chat_template_kwargs":{{"enable_thinking":true}},"temperature":0.6,"top_p":0.95}}',
         ],
         "reranker": [
             "--bakcend=vllm-rerank",
